@@ -30,3 +30,6 @@ class StarWarsResource(ABC):
 
         async with session.get(query) as response:
             return await response.json()
+        
+    def __str__(self):
+        return f'{self.name} ({self.resource_type})'

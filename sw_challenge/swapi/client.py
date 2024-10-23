@@ -43,7 +43,7 @@ class StarWarsAPIClient:
                     for resource_dict in found_resources[ResponseParameterEnum.RESULTS]]
 
         except Exception as e:
-            logging.error(f"Failed to search for {resource} using term {term}") # TODO: why has it failed?
+            logging.error(f"Failed to search for {resource} using term {term}")
             raise e
 
     def get_by_search_term(self, search_term: str) -> list[StarWarsEntity]:

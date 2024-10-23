@@ -14,4 +14,4 @@ class Person(StarWarsResource):
 
     async def get_related_people(self) -> List[CorePerson]:
         # NOTE: Each person is related to itself
-        return [CorePerson(self.name)] # TODO: Convert to CorePerson
+        return [CorePerson(self.name)]
