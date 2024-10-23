@@ -12,7 +12,7 @@ class StarWarsEntity:
         self.related_people = related_people
 
     def __str__(self) -> str:
-        return f'{self.name} | {self.entity_type} | ' + ' , '.join([str(p) for p in self.related_people])
+        return f'{self.name} | {self.entity_type} | ' + ', '.join([str(p) for p in self.related_people])
     
     def __repr__(self) -> str:
         return str(self)
